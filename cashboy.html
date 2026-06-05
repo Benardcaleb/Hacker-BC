@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CASH BOY | Online Money Making Academy</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80') center center/cover fixed;
+color:white;
+}
+
+.overlay{
+background:rgba(0,0,0,0.45);
+min-height:100vh;
+}
+
+.loader-container{
+position:fixed;
+width:100%;
+height:100%;
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.loader{
+width:80px;
+height:80px;
+border:8px solid #333;
+border-top:8px solid #00ffd5;
+border-radius:50%;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+100%{transform:rotate(360deg);}
+}
+
+header{
+padding:25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:35px;
+font-weight:bold;
+color:#00ffd5;
+}
+
+.sign-btn{
+padding:12px 25px;
+background:#00ffd5;
+color:#000;
+border:none;
+cursor:pointer;
+font-weight:bold;
+border-radius:30px;
+transition:.4s;
+}
+
+.sign-btn:hover{
+transform:scale(1.1);
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+max-width:800px;
+margin:auto;
+}
+
+.learn-btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 35px;
+background:#00ffd5;
+color:#000;
+font-weight:bold;
+text-decoration:none;
+border-radius:30px;
+transition:.4s;
+}
+
+.learn-btn:hover{
+transform:translateY(-5px);
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:50px;
+}
+
+.card{
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(10px);
+padding:25px;
+border-radius:15px;
+transition:.5s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px #00ffd5;
+}
+
+.content{
+padding:50px;
+line-height:1.9;
+background:rgba(0,0,0,0.6);
+margin:20px;
+border-radius:20px;
+}
+
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+justify-content:center;
+align-items:center;
+}
+
+.login-box{
+background:white;
+color:black;
+padding:30px;
+border-radius:15px;
+width:350px;
+}
+
+.login-box input{
+width:100%;
+padding:12px;
+margin:10px 0;
+}
+
+.login-box button{
+width:100%;
+padding:12px;
+background:#00ffd5;
+border:none;
+cursor:pointer;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:rgba(0,0,0,0.7);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="loader-container" id="loader">
+<div class="loader"></div>
+</div>
+
+<div class="overlay">
+
+<header>
+<div class="logo">CASH BOY</div>
+<button class="sign-btn" onclick="openLogin()">SIGN IN</button>
+</header>
+
+<section class="hero">
+<h1>Learn How To Make Money Online</h1>
+<p>
+Welcome to CASH BOY Academy. Discover practical digital skills, freelancing opportunities,
+content creation techniques, affiliate marketing strategies and online business ideas.
+</p>
+
+<a href="#learn" class="learn-btn">OPEN MAJOR CONTENT</a>
+
+</section>
+
+<section class="cards">
+<div class="card">
+<h2>Freelancing</h2>
+<p>Offer writing, design, coding and digital services worldwide.</p>
+</div>
+
+<div class="card">
+<h2>Content Creation</h2>
+<p>Earn from videos, blogs, podcasts and social media content.</p>
+</div>
+
+<div class="card">
+<h2>Affiliate Marketing</h2>
+<p>Promote products and receive commissions for sales.</p>
+</div>
+
+<div class="card">
+<h2>Digital Skills</h2>
+<p>Learn web design, AI tools, graphic design and marketing.</p>
+</div>
+</section>
+
+<section class="content" id="learn">
+
+<h1>Complete Online Money Making Guide</h1>
+
+<p>
+The internet provides opportunities for people to earn income by offering valuable services,
+creating useful content, building businesses and solving problems for customers.
+Successful online earners focus on learning high-income skills and consistently improving them.
+</p>
+
+<h2>1. Freelancing</h2>
+<p>
+Freelancing involves offering services such as graphic design, writing, programming,
+video editing, virtual assistance and social media management.
+</p>
+
+<h2>2. Content Creation</h2>
+<p>
+Create educational videos, tutorials, reviews and entertainment content.
+Income can come from advertisements, sponsorships and partnerships.
+</p>
+
+<h2>3. Affiliate Marketing</h2>
+<p>
+Recommend products and earn commissions when customers purchase through referral links.
+</p>
+
+<h2>4. Web Development</h2>
+<p>
+Businesses need websites. Learning HTML, CSS, JavaScript and backend technologies
+can create strong income opportunities.
+</p>
+
+<h2>5. Online Courses</h2>
+<p>
+People pay to learn valuable skills. Create courses and educational resources.
+</p>
+
+<h2>6. Digital Marketing</h2>
+<p>
+Businesses require help attracting customers through social media,
+search engines and advertising campaigns.
+</p>
+
+</section>
+
+<footer>
+<h2>Contact CASH BOY</h2>
+<p>Phone: 0770820398</p>
+<p>Email: cashboyacademy@gmail.com</p>
+<p>© 2026 CASH BOY Academy</p>
+</footer>
+
+</div>
+
+<div class="modal" id="loginModal">
+<div class="login-box">
+<h2>Login</h2>
+
+<form action="login.php" method="POST">
+<input type="email" name="email" placeholder="Email" required>
+<input type="password" name="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+
+<br>
+
+<form action="register.php" method="POST">
+<input type="text" name="fullname" placeholder="Full Name" required>
+<input type="email" name="regemail" placeholder="Email Address" required>
+<input type="password" name="regpassword" placeholder="Create Password" required>
+<button type="submit">Register</button>
+</form>
+
+</div>
+</div>
+
+<script>
+window.onload=function(){
+document.getElementById('loader').style.display='none';
+}
+
+function openLogin(){
+document.getElementById('loginModal').style.display='flex';
+}
+</script>
+
+</body>
+</html>
